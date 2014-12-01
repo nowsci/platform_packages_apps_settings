@@ -47,6 +47,16 @@
                 android:value="com.android.settings.Settings$StorageUseActivity" />
     </PreferenceScreen>
 
+    <PreferenceScreen
+            android:fragment="com.android.settings.applications.AppOpsSummary"
+            android:summary="@string/app_ops_summary"
+            android:title="@string/app_ops_title">
+            <intent
+                 android:action="com.android.settings.Settings$AppOpsSummaryActivity"
+                 android:targetPackage="com.android.settings"
+                 android:targetClass="com.android.settings.Settings$AppOpsSummaryActivity" />
+    </PreferenceScreen>
+
     <CheckBoxPreference
             android:key="toggle_advanced_settings"
             android:title="@string/advanced_settings"
